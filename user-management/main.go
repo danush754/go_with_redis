@@ -92,7 +92,7 @@ func main() {
 	r.HandleFunc("/add-user", adduser).Methods(http.MethodPost)
 	r.HandleFunc("/play", play).Methods(http.MethodGet)
 	r.HandleFunc("/leaderboard/{n}", leaderboard).Methods(http.MethodGet)
-	r.HandleFunc()
+	// r.HandleFunc()
 
 	log.Println("HTTP server has been started..")
 	log.Fatal(http.ListenAndServe(":8080", r))

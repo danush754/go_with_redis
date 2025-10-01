@@ -1,0 +1,126 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1fafa;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 580px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #0b214a; /* Navy blue */
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    .shorten-box,
+    .premium-box {
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(11, 33, 74, 0.12);
+      border-radius: 12px;
+      padding: 30px 25px;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    .shorten-box h2,
+    .premium-box h2 {
+      color: #444444;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-size: 1.25rem;
+    }
+
+    .input-group {
+      display: flex;
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .input-group input[type="text"] {
+      flex-grow: 1;
+      padding: 14px 18px;
+      font-size: 1rem;
+      border: 2px solid #cccccc;
+      border-right: none;
+      border-radius: 8px 0 0 8px;
+      outline-color: #d4b04d; /* gold on focus */
+      transition: border-color 0.3s;
+    }
+
+    .input-group input[type="text"]:focus {
+      border-color: #d4b04d;
+    }
+
+    .input-group button {
+      background-color: #d4b04d; /* gold */
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      padding: 0 25px;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 1rem;
+    }
+
+    .input-group button:hover {
+      background-color: #b59636;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      color: #555555;
+      line-height: 1.4;
+    }
+
+    .premium-box .description {
+      font-size: 0.9rem;
+      color: #333333;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .premium-box button {
+      background-color: #0b214a; /* navy blue */
+      color: #fff;
+      border: none;
+      padding: 12px 32px;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .premium-box button:hover {
+      background-color: #072142;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 520px) {
+      body {
+        padding: 30px 10px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .premium-box button {
+        width: 100%;
+        padding: 14px 0;
+      }
+    }

@@ -24,7 +24,7 @@ func init() {
 func main() {
 	r := mux.NewRouter()
 
-	r.HandleFunc("/send", send).Methods(http.MethodPost)
+	// r.HandleFunc("/send", send).Methods(http.MethodPost)
 
 	log.Println("started HTTP server...")
 	log.Fatal(http.ListenAndServe(":8080", r))
